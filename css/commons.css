@@ -1,0 +1,51 @@
+/* 任何盗用本站代码的行为都将受到追究！ */
+/* 公共样式文件 */
+/* 删除所有标签内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    /* css3 盒子模型 */
+    box-sizing: border-box;
+}
+
+/* 定义版心宽度 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+/* 统一以下标签的文字修饰 */
+a,
+i,
+em,
+b,
+strong,
+u,
+ins,
+del,
+s {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* 所有 a 标签修饰的超链接文字，当鼠标掠过时文字颜色 */
+a:hover {
+    color: #f0f0f4;
+}
+
+/* 初始化 button 和 input 标签 */
+button,
+input {
+    /* 去掉默认的灰色边框 */
+    border: 0;
+    /* 去掉蓝色边框 */
+    outline: none;
+}

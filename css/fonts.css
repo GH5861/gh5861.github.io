@@ -1,0 +1,16 @@
+/* 字体样式文件 */
+/* 定义服务器字体 */
+@font-face {
+    font-family: 盛世繁花体;
+    src: url(../fonts/盛世繁花体.ttf);
+}
+
+@font-face {
+    font-family: 汉仪长草体;
+    src: url(../fonts/汉仪长草体.ttf);
+}
+
+@font-face {
+    font-family: 告白情书体;
+    src: url(../fonts/告白情书体.ttf);
+}

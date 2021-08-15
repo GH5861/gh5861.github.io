@@ -1,0 +1,148 @@
+/* 任何盗用本站代码的行为都将受到追究！ */
+
+body {
+    /* 设置首页背景图  start */
+    /* 在线 Bing 壁纸 api 接口 */
+    /* background: url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN) no-repeat fixed; */
+    /* background: url(https://retiehe.com/backend/bing/1080p) no-repeat fixed; */
+    background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat fixed;
+    /* background: url(https://api.dujin.org/bing/1920.php) no-repeat fixed; */
+    /* background: url(https://api.dujin.org/bing/1366.php) no-repeat fixed; */
+    /* background: url(https://api.dujin.org/bing/m.php) no-repeat fixed; */
+
+    /* 本地 Bing 壁纸 api 接口，需要搭建 php 服务器，PHP文件在 images 文件下 */
+    /* background: url(http://127.0.0.1:2120) no-repeat fixed; */
+
+    /* 在线随机壁纸 api 接口 */
+    /* background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat fixed; */
+
+    /* 在线随机二次元壁纸 api 接口 */
+    /* background: url(https://random.52ecy.cn/randbg.php) no-repeat fixed; */
+    /* background: url(https://api.ixiaowai.cn/api/api.php) no-repeat fixed; */
+    /* background: url(https://api.ixiaowai.cn/mcapi/mcapi.php) no-repeat fixed; */
+    /* background: url(https://api.mtyqx.cn/api/random.php) no-repeat fixed; */
+    /* background: url(https://api.mtyqx.cn/tapi/random.php) no-repeat fixed; */
+    /* background: url(https://api.hmianw.com) no-repeat fixed; */
+    /* background: url(https://img.catct.cn) no-repeat fixed; */
+    /* background: url(https://img.catct.cn/pixiv.php) no-repeat fixed; */
+    /* background: url(https://api.mz-moe.cn/img.php) no-repeat fixed; */
+    /* 设置首页背景图  end */
+
+    /* 背景图片拉伸以铺满全屏 start */
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* 背景图片拉伸以铺满全屏 end */
+}
+
+.shortcut {
+    /* 顶部导航栏的长宽 */
+    width: 100%;
+    height: 50px;
+    /* 黑色阴影 */
+    /* background: rgba(0, 0, 0, 0.2); */
+    /* 白色阴影 */
+    background: rgba(255, 255, 255, 0.1);
+    font-family: 告白情书体;
+    font-size: 20px;
+}
+
+.shortcut a {
+    display: inline-block;
+    height: 50px;
+}
+
+.shortcut ul {
+    margin-right: 10px;
+}
+
+.shortcut ul li {
+    float: left;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+}
+
+.shortcut .fr li:nth-child(even) {
+    width: 1px;
+    height: 20px;
+    background-color: #666;
+    margin: 15px 10px;
+}
+
+.shortcut dl {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 100px;
+    border: hidden solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover dl {
+    display: block;
+}
+
+.shortcut dl dd {
+    text-align: center;
+}
+
+.content {
+    /* 居中展示内容的框架及其属性 */
+    height: 240px;
+    width: 600px;
+    /* 居中展示内容方法一 start */
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; */
+    /* 居中展示内容方法一 end */
+    /* 居中展示内容方法二 start */
+    position: absolute;
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+    /* 居中展示内容方法二 end */
+    border-radius: 15px;
+    background: rgba(65, 65, 65, 0.3);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    /* filter: blur(12px);
+    -webkit-filter: blur(12px);
+    -moz-filter: blur(12px);
+    -o-filter: blur(12px);
+    -ms-filter: blur(12px);
+    z-index: 2; */
+}
+
+/* .content>div {
+    position: absolute;
+    z-index: 3;
+} */
+
+.content p b {
+    /* 居中展示的文字内容 */
+    display: block;
+    color: #d3e0f3;
+    text-align: center;
+    line-height: 240px;
+    font-family: 盛世繁花体;
+    font-size: 48px;
+}
+
+.content p u {
+    /* 个人网站声明 */
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: #edd1d8;
+    font-family: 汉仪长草体;
+    font-size: 20px;
+}
